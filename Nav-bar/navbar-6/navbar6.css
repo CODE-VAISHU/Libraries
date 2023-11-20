@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(downlaod.jpg);
+  background-size: 100% 100%, 100% 100%;
+}
+.navbar-page {
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.781);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bar {
+  height: 65%;
+  width: 100%;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.163);
+}
+.bar #logo {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  margin-left: 5%;
+  float: left;
+}
+#logo img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icons {
+  height: 50%;
+  width: 5%;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.5%;
+}
+.icons i {
+  display: block;
+  width: 50%;
+  height: 100%;
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+.icons i:hover {
+  color: white;
+}
+#navigation {
+  width: 100%;
+  height: 35%;
+  overflow: auto;
+  position: relative;
+  white-space: nowrap;
+}
+#navigation::-webkit-scrollbar {
+  display: block;
+  height: 5px;
+  width: 15px;
+  background-color: transparent;
+}
+#navigation::-webkit-scrollbar-thumb {
+  background: rgba(218, 215, 218, 0);
+  border-radius: 15px;
+  width: 15px;
+}
+#navigation a {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  border: 2px solid rgba(255, 0, 0, 0);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.574);
+}
+#navigation a:hover {
+  color: white;
+  border-bottom-color: #fbf5b7;
+  background-color: rgba(255, 255, 255, 0.049);
+}
+#navigation #html {
+  color: white;
+  border-bottom-color: #fbf5b7;
+  background-color: rgba(255, 255, 255, 0.049);
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+}
+.main {
+  background: linear-gradient(
+    90deg,
+    rgb(26, 26, 29) 27.1%,
+    rgb(111, 34, 50) 77.5%
+  );
+  height: 100%;
+  padding: 5px;
+}
+.navigation {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  height: calc(100% - 10px);
+  border-radius: 10px;
+  width: 13%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.logo {
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+}
+.logo img {
+  width: 100%;
+}
+.bar {
+  height: 90%;
+}
+.bar .bars {
+  height: 16.67%;
+}
+.bar-item {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bar-item i {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+.bar-item span {
+  margin-top: 6px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+}
+.bar-item:hover {
+  background-color: rgba(255, 255, 255, 0.274);
+  color: #fbf5b7;
+}
+
+#content {
+  float: right;
+  height: 100%;
+  position: relative;
+  right: 0;
+  overflow: scroll;
+  width: calc(87% - 5px);
+}
+#content::-webkit-scrollbar {
+  display: none;
+}
+#content .cont {
+  position: relative;
+  height: 100%;
+  border: 1px solid rgb(255, 255, 255);
+}
+#content .nav-cont {
+  height: 100%;
+}
+#content h3 {
+  position: relative;
+  display: inline-block;
+  margin: 2%;
+  height: 5%;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: rgba(255, 255, 255, 0.647);
+}
+#content .text {
+  border: 1px solid #fbf5b7;
+  height: 87.7%;
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.text span {
+  font-size: 3.5rem;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

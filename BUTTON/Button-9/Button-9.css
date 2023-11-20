@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+}
+/* main container which contain all elem:ents or data */
+.container {
+  height: 100%;
+  background: linear-gradient(
+    109.6deg,
+    rgb(43, 1, 91) 13.4%,
+    rgb(122, 2, 54) 100.2%
+  );
+}
+/* header section */
+#header {
+  height: 13%;
+  padding: 0 4%;
+  box-shadow: 0 2px 4px #fbf5b7;
+}
+/* logo section in header */
+#header #logo {
+  width: 20%;
+  height: 66.67%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#logo img {
+  height: 100%;
+}
+/* body section */
+.body {
+  height: 83.33%;
+}
+.btn-cont {
+  height: 300px;
+  width: 550px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.heading {
+  height: 17%;
+  box-shadow: 0px 2px 3px rgb(21, 38, 82);
+}
+.heading h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.812);
+  text-shadow: 0px -2px 3px #0000009e;
+}
+.btn {
+  height: 83%;
+}
+/* button  */
+.btn button {
+  width: 58.33%;
+  height: 33.33%;
+  outline: none;
+  overflow: hidden;
+  border: 0px solid;
+  outline: 3px solid #ffffffba;
+  outline-offset: 0px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(43, 1, 91);
+  transition: all 500ms cubic-bezier(0.36, 0.63, 0.5, 0.73);
+  overflow: hidden;
+}
+.btn button:hover {
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 1);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+}
+/* nothing just for text  */
+.btn button span {
+  color: rgb(255, 255, 255);
+  font-size: 27px;
+  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.btn button:hover span {
+  color: rgb(122, 2, 54);
+}
+
+/* responsive for tablet in landscape mode ( #ipad mini 2)*/
+@media (max-width: 1112px) and (orientation: landscape) {
+  #header {
+    padding: 0 5%;
+  }
+  #header #logo {
+    width: 33.33%;
+    height: 75%;
+  }
+}
+/* responsive for tablet in portrait mode ( #ipad mini 2)*/
+@media (max-width: 784px) and (orientation: portrait) {
+  #header {
+    height: 12.5%;
+    padding: 5px 20px;
+  }
+  #header #logo {
+    height: 75%;
+    width: 40%;
+  }
+  .body {
+    height: 82.5%;
+  }
+}
+/* responsive in mobile in portrait mode (#realme 8s and vivo)  */
+@media (max-width: 414px) and (orientation: portrait) {
+  #header {
+    height: 12.5%;
+    padding: 5px 5px;
+  }
+  #header #logo {
+    height: 80%;
+    width: 58.33%;
+  }
+  .body {
+    height: 82.5%;
+  }
+  .btn-cont {
+    width: 100%;
+  }
+  .btn button {
+    width: 58.33%;
+  }
+}
+/* responsive in mobile in landscape (#realme 8s and vivo)  */
+@media (max-height: 414px) and (orientation: landscape) {
+  #header {
+    display: none;
+  }
+  .body {
+    height: 100%;
+  }
+  .btn-cont {
+    width: 100%;
+    height: 100%;
+  }
+}
